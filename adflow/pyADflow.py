@@ -4536,6 +4536,7 @@ class ADFLOW(AeroSolver):
             'wallDistCutoff':[float, 1e20],
             'infChangeCorrection':[bool, True],
             'cavitationNumber':[float, 1.4],
+            'SAConsts':[list, [0.41, 0.1355, 0.622, 0.66666666667, 7.1, 0.3, 2.0, 1.0, 2.0, 1.2, 0.5, 2.0]],
 
             # Common Parameters
             'nCycles':[int, 2000],
@@ -4844,6 +4845,7 @@ class ADFLOW(AeroSolver):
             'forcesastractions':['physics', 'forcesastractions'],
             'lowspeedpreconditioner':['discr', 'lowspeedpreconditioner'],
             'cavitationnumber':['physics','cavitationnumber'],
+            'saconsts':['physics', 'saconsts'],
 
             # Common Parameters
             'ncycles':['iter', 'ncycles'],
