@@ -48,6 +48,7 @@ contains
     real(kind=realtype) :: nuinf, ktmp, uinf2
     real(kind=realtype) :: vinf, zinf, tmp1(1), tmp2(1)
     intrinsic sqrt
+    call saassign()
 ! compute the dimensional viscosity from sutherland's law
     muinfdim = musuthdim*((tsuthdim+ssuthdim)/(tinfdim+ssuthdim))*(&
 &     tinfdim/tsuthdim)**1.5_realtype

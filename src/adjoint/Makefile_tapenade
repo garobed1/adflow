@@ -159,13 +159,13 @@ turbBCRoutines%bcTurbTreatment(w, rlv, d2wall, winf) > \
 solverUtils%timeStep_block(w, pInfCorr, rhoInf, si, sj, sk, p) > \
               (w, pInfCorr, rhoInf, si, sj, sk, p, radi, radj, radk) \
 \
-sa%saSource(w, rlv, vol, si, sj, sk, timeRef, d2wall) > \
+sa%saSource(w, rlv, vol, si, sj, sk, timeRef, SAConsts, d2wall) > \
            (w, rlv, vol, si, sj, sk, timeREf, scratch) \
 \
 turbutils%turbAdvection(w, vol, si, sj, sk, scratch) > \
                        (w, vol, si, sj, sk, scratch) \
 \
-sa%saViscous(w, vol, si, sj, sk, rlv, scratch) > \
+sa%saViscous(w, vol, si, sj, sk, rlv, SAConsts, scratch) > \
             (w, vol, si, sj, sk, rlv, scratch) \
 \
 sa%saResScale(scratch, dw) > \

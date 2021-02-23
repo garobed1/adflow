@@ -1124,6 +1124,7 @@ python module libadflow
          real(kind=realtype) dimension(3) :: pointrefec
          real(kind=realtype) dimension(3,2) :: momentaxis
          real(kind=realtype) dimension(12) :: saconsts
+         real(kind=realtype) dimension(12) :: saconstsd0
          logical :: forcesastractions
          real(kind=realtype) :: ssuthdim
          real(kind=realtype) :: musuthdim

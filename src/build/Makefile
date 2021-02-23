@@ -98,10 +98,10 @@ python: lib ../f2py/adflow.pyf
 	@echo "#------------------------------------------------------#"
 
 # Check the consistency of the pyf file. All carachters (except comments and preprocessor tags) need to be lower case!!!
-	python ../f2py/checkPyfForUpperCase.py
+	$(PYTHON) ../f2py/checkPyfForUpperCase.py
 
 # Run the preprocessor on the pyf file:
-	python ../f2py/pyf_preprocessor.py real ../f2py/adflow.pyf
+	$(PYTHON) ../f2py/pyf_preprocessor.py real ../f2py/adflow.pyf
 
 # Run f2py to get adflowmodule.c and adflow-f2pywrapper2.f90
 	$(F2PY) ../f2py/adflow.pyf.autogen

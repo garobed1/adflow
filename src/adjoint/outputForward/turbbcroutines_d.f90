@@ -1192,6 +1192,7 @@ bocos:do nn=1,nbocos
     integer(kind=inttype) :: y3
     integer(kind=inttype) :: y2
     integer(kind=inttype) :: y1
+    call saassign()
 !        ================================================================
 ! determine the turbulence model used and loop over the faces
 ! of the subface and set the values of bmt and bvt for an
@@ -1891,6 +1892,7 @@ bocos:do nn=1,nviscbocos
     integer(kind=inttype) :: y3
     integer(kind=inttype) :: y2
     integer(kind=inttype) :: y1
+    call saassign()
 !        ================================================================
 ! determine the turbulence model used and loop over the faces
 ! of the subface and set the values of bmt and bvt for an

@@ -225,6 +225,7 @@ contains
     real(kind=realtype) :: cv13, chi, chi2, chi3, chi4, f, df, dchi
     intrinsic abs
     real(kind=realtype) :: abs0
+    call saassign()
 ! take care of the exceptional cases.
     if (eddyratio .le. zero) then
       sanuknowneddyratio = zero
@@ -479,6 +480,7 @@ nadvloopspectral:do ii=1,nadv
     intrinsic mod
     real(kind=realtype) :: tempd
     real(kind=realtype) :: tempd0
+    call saassign()
 ! store the cv1^3; cv1 is a constant of the spalart-allmaras model.
     cv13 = rsacv1**3
 ! loop over the cells of this block and compute the eddy viscosity.
@@ -526,6 +528,7 @@ nadvloopspectral:do ii=1,nadv
     integer(kind=inttype) :: i, j, k, ii, isize, jsize, ksize
     real(kind=realtype) :: chi, chi3, fv1, rnusa, cv13
     intrinsic mod
+    call saassign()
 ! store the cv1^3; cv1 is a constant of the spalart-allmaras model.
     cv13 = rsacv1**3
 ! loop over the cells of this block and compute the eddy viscosity.
@@ -602,6 +605,7 @@ nadvloopspectral:do ii=1,nadv
     intrinsic max
     intrinsic tanh
     real(kind=realtype) :: max1
+    call saassign()
 ! compute the vorticity squared in the cell centers. the reason
 ! for computing the vorticity squared is that a routine exists
 ! for it; for the actual eddy viscosity computation the vorticity

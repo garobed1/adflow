@@ -67,6 +67,7 @@ contains
     real(kind=realtype) :: arg1d
     real(kind=realtype) :: result1
     real(kind=realtype) :: result1d
+    call saassign()
 ! compute the dimensional viscosity from sutherland's law
     muinfdimd = musuthdim*((tsuthdim+ssuthdim)*1.5_realtype*(tinfdim/&
 &     tsuthdim)**0.5*tinfdimd/((tinfdim+ssuthdim)*tsuthdim)-(tsuthdim+&
@@ -263,6 +264,7 @@ contains
     intrinsic sqrt
     real(kind=realtype) :: arg1
     real(kind=realtype) :: result1
+    call saassign()
 ! compute the dimensional viscosity from sutherland's law
     muinfdim = musuthdim*((tsuthdim+ssuthdim)/(tinfdim+ssuthdim))*(&
 &     tinfdim/tsuthdim)**1.5_realtype

@@ -580,6 +580,7 @@ module inputPhysics
   real(kind=realType) :: SSuthDim, muSuthDim, TSuthDim
   real(kind=realType) :: cavitationnumber
   real(kind=realType), dimension(12) :: SAConsts
+  real(kind=realType), dimension(12) :: saconstsd0
 
 #ifndef USE_TAPENADE
   real(kind=realType) :: alphad, betad

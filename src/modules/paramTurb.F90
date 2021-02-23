@@ -11,20 +11,20 @@ module paramTurb
 !
 !       Spalart-Allmaras constants.
 !
-       real(kind=realType), protected :: rsaK   = 0.41_realType
-       real(kind=realType), protected :: rsaCb1 = 0.1355_realType
-       real(kind=realType), protected :: rsaCb2 = 0.622_realType
-       real(kind=realType), protected :: rsaCb3 = 0.66666666667_realType
-       real(kind=realType), protected :: rsaCv1 = 7.1_realType
-       real(kind=realType), protected :: rsaCw1! = rsaCb1/(rsaK**2) &
+       real(kind=realType) :: rsaK   = 0.41_realType
+       real(kind=realType) :: rsaCb1 = 0.1355_realType
+       real(kind=realType) :: rsaCb2 = 0.622_realType
+       real(kind=realType) :: rsaCb3 = 0.66666666667_realType
+       real(kind=realType) :: rsaCv1 = 7.1_realType
+       real(kind=realType) :: rsaCw1! = rsaCb1/(rsaK**2) &
                                                !         + (1.+rsaCb2)/rsaCb3
-       real(kind=realType), protected :: rsaCw2 = 0.3_realType
-       real(kind=realType), protected :: rsaCw3 = 2.0_realType
-       real(kind=realType), protected :: rsaCt1 = 1.0_realType
-       real(kind=realType), protected :: rsaCt2 = 2.0_realType
-       real(kind=realType), protected :: rsaCt3 = 1.2_realType
-       real(kind=realType), protected :: rsaCt4 = 0.5_realType
-       real(kind=realType), protected :: rsaCrot = 2.0_realType
+       real(kind=realType) :: rsaCw2 = 0.3_realType
+       real(kind=realType) :: rsaCw3 = 2.0_realType
+       real(kind=realType) :: rsaCt1 = 1.0_realType
+       real(kind=realType) :: rsaCt2 = 2.0_realType
+       real(kind=realType) :: rsaCt3 = 1.2_realType
+       real(kind=realType) :: rsaCt4 = 0.5_realType
+       real(kind=realType) :: rsaCrot = 2.0_realType
 
 !
 !       K-omega constants.
